@@ -1,0 +1,16 @@
+p {
+    color: blue;
+  }
+  
+  .important-text {
+    color: green !important;
+  }
+  
+  #para1 {
+    color: orange;
+  }
+  
+  p {
+    color: purple;
+  }
+  

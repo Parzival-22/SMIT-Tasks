@@ -1,0 +1,44 @@
+.box img
+{
+height: 200px;
+width: 200px;
+display: block;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.box
+{
+  margin-top:15%;  
+  border: 3px solid gray;
+  border-radius: 2px;   
+}
+
+.bigbox
+{
+    height: 500px;
+    width: 1000px;
+    background-color: antiquewhite;
+    justify-content: center;
+    margin: 15%
+}
+
+img:hover
+{
+    transform: scale(1.1);
+    transition: 0.3ms ease-in;
+}
+
+.container:hover .box img
+{
+    filter: blur(2px);
+}
+
+.container .box:hover img
+{
+    filter: none;
+}
