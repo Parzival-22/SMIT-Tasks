@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  body {
+    font-family: Roboto;
+    line-height: 1.6;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2b3e52;
+    padding: 1em 2em;
+    color: white;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .section {
+    padding: 3em 2em;
+    display: grid;
+    gap: 2em;
+    
+  }
+
+  .centered-section {
+    justify-items: center;
+    text-align: center;
+  }
+  
+  #portfolio .portfolio-grid {
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+
+  }
+  
+  .portfolio-item {
+    background-color: lightgray;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .portfolio-item:hover {
+    transform: scale(1.05);
+  }
+
+  .portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  
+  .about
+  {
+    color: antiquewhite;
+    background-color: #158b74;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+  .about-text {
+    max-width: 600px;
+  }
+  
+  .download-box {
+
+    background-color: navy;
+    border-radius: 15px;
+    color: white;
+    padding: 1em 2em;
+    display: inline-block;
+    margin-top: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .download-box:hover {
+    background-color: darkblue;
+  }
+  
+  .contact-form {
+    display: grid;
+    gap: 1em;
+    max-width: 600px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 1em;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    width: 100%;
+  }
+  
+  .contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+  }
+  
+  .footer {
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #213244;
+    color: white;
+    text-align: center;
+    padding: 2em;
+    margin-top: 3em;
+  }
+
+  .footer-box {
+    max-width: 300px;
+    margin: 0;
+  }
