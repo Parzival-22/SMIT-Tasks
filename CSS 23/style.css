@@ -1,0 +1,51 @@
+body
+{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container
+{
+    height: 500px;
+    width: 800px;
+    background-color: rgb(21, 104, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cup
+{
+    height: 150px;
+    width: 120px;
+    background-color: rgb(43, 43, 153);
+}
+.steam-wrapper
+{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+}
+.steam1, .steam2, .steam3, .steam4, .steam5 {
+    width: 20px;
+    height: 5px;
+    background-color: rgb(83, 83, 83);
+    transition: height 0.5s ease;
+  }
+
+.steam1 { transition-delay: 0s; }
+.steam2 { transition-delay: 0.1s; }
+.steam3 { transition-delay: 0.2s; }
+.steam4 { transition-delay: 0.3s; }
+.steam5 { transition-delay: 0.4s; }
+
+.container:hover .steam1,
+.container:hover .steam2,
+.container:hover .steam3,
+.container:hover .steam4,
+.container:hover .steam5 {
+  height: 25px;
+}
